@@ -7,7 +7,7 @@ This is an ongoing compilation of the most common JavaScript questions I've seen
 ### So far, this cheat sheet goes over:
 
 * Fizzbuzz
-* Palidromes
+* Palindromes
 * Fibonacci Sequence
 * Sorting methods
 * Finding and removing duplicates from arrays
