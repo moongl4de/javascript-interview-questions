@@ -83,3 +83,32 @@ for (i = 0; i < arr.length; i++) {
 // }
 // console.log("Sorted array with duplicates", arr)
 // console.log("Sorted array without duplicates: ", newArr)
+
+//------------------------------------------------------------------------//
+//------------------------------------------------------------------------//
+//------------------------------------------------------------------------//
+
+//Reverse a string
+
+let string = "Reverse this string"
+let newString = []
+string.split("")
+for(i = 0; i < string.length; i++){
+    newString.unshift(string[i])
+}
+
+console.log(newString.join(""))
+
+//That's cool and all, but there's an even better way to write it by chaining the split, reverse and join methods.
+
+console.log("Chained methods: ", string.split("").reverse().join(""))
+
+//What if the interviewer asks to reverse at the word level instead of each individual letter being reversed?
+
+
+console.log("Chained methods: ", string.split(" ").reverse().join(" "))
+
+//------------------------------------------------------------------------//
+//------------------------------------------------------------------------//
+//------------------------------------------------------------------------//
+
