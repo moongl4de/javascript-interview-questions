@@ -112,3 +112,39 @@ console.log("Chained methods: ", string.split(" ").reverse().join(" "))
 //------------------------------------------------------------------------//
 //------------------------------------------------------------------------//
 
+//What is the output for each of these console logs?
+
+console.log(5 + "5") //this logs the string "55"
+
+// "+" applies to numbers and strings. If there are two numbers, it simply adds the numbers (obviously)... but if you have a number and a string, it will concatenate them and convert to a string.
+//
+
+console.log(5 - "5") // this logs the number 0
+// "-" does not apply to strings, so the string is converted to it's number value and then the equation is executed.
+
+//------------------------------------------------------------------------//
+//------------------------------------------------------------------------//
+//------------------------------------------------------------------------//
+
+//Determine if the string is a palindrome
+
+function palindrome(input){
+   
+    let check = []
+    for (i in input){
+        check.unshift(input[i])
+    }
+    if(check.join("").toLowerCase() == input.toLowerCase()){
+        console.log(input, "is a palindrome!")
+    } else {
+        console.log(input, "is not a palindrome.")
+    }
+}
+
+palindrome("Yeet")
+palindrome("racecar")
+palindrome("Dad")
+
+//Fun Fact: The longest palindromic word in the Oxford English Dictionary is "tattarrattat".    :O
+
+
