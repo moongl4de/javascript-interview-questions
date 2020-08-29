@@ -38,9 +38,9 @@ function fizzbuzz(num) {
 
 //Fibonacci Sequence Array
 
-function spiralOut() {
+function spiralOut(num) {
     let a = 0, b = 1, result, fibArr = [];
-    for (i = 0; i < 10; i++) {
+    for (i = 0; i < num; i++) {
         result = a + b
         fibArr.push(result)
         a = b, b = result
@@ -48,7 +48,7 @@ function spiralOut() {
     console.log("Fibonacci Sequence:",fibArr)
 };
 
-spiralOut();
+spiralOut(6);
 
 //------------------------------------------------------------------------//
 //------------------------------------------------------------------------//
