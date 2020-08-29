@@ -150,6 +150,15 @@ palindrome("Dad")
 //------------------------------------------------------------------------//
 //------------------------------------------------------------------------//
 
+//Not JavaScript specific but... Data structures!
+
+//Question:
+//What's the difference between a stack and a queue?
+
+//Answer:
+//Stack - - - LIFO (Last In First Out) can be understood by visualizing a stack of plates. The last plate placed on the stack is the first plate to be taken away.
+//Queue - - - FIFO (First In First Out) can be understood by visualizing a line at a restaurant. The first person there will be the first person to be served.
+
 
 
 
