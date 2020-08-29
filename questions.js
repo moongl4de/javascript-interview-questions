@@ -58,6 +58,28 @@ spiralOut()
 
 //Sorting an array
 
-let arr = [4,1,5,3,6,12,66,123,2,77]
+let arr = [4, 1, 5, 3, 6, 12, 66, 123, 2, 6, 77]
 
-console.log(arr.sort((a, b) => (a - b)))
+console.log("I've been sorted, see?! ", arr.sort((a, b) => (a - b)))
+
+//Okay cool but what if we want to find a duplicate?
+
+// arr.sort((a, b) => (a - b))
+
+for (i = 0; i < arr.length; i++) {
+    if (arr[i] === arr[i - 1]) {
+        console.log("Duplicate found: ", arr[i])
+    }
+};
+
+//Nice, now remove it.
+
+// let newArr = []
+
+// for(i = 0; i < arr.length; i++){
+//     if(arr[i] === arr[i - 1]){
+//         console.log("Duplicate found: ", arr[i])
+//     } else (newArr.push(arr[i]))
+// }
+// console.log("Sorted array with duplicates", arr)
+// console.log("Sorted array without duplicates: ", newArr)
