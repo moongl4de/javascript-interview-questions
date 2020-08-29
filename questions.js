@@ -39,14 +39,11 @@ function fizzbuzz(num) {
 //Fibonacci Sequence
 
 function spiralOut() {
-    let a = 0,
-        b = 1,
-        result;
+    let a = 0, b = 1, result;
     for (i = 0; i < 10; i++) {
         result = a + b
         console.log(result)
-        a = b
-        b = result
+        a = b, b = result
     };
 };
 
