@@ -36,18 +36,19 @@ function fizzbuzz(num) {
 //------------------------------------------------------------------------//
 //------------------------------------------------------------------------//
 
-//Fibonacci Sequence
+//Fibonacci Sequence Array
 
 function spiralOut() {
-    let a = 0, b = 1, result;
+    let a = 0, b = 1, result, fibArr = [];
     for (i = 0; i < 10; i++) {
         result = a + b
-        console.log(result)
+        fibArr.push(result)
         a = b, b = result
     };
+    console.log("Fibonacci Sequence:",fibArr)
 };
 
-spiralOut()
+spiralOut();
 
 //------------------------------------------------------------------------//
 //------------------------------------------------------------------------//
@@ -90,7 +91,7 @@ for (i = 0; i < arr.length; i++) {
 let string = "Reverse this string"
 let newString = []
 string.split("")
-for(i = 0; i < string.length; i++){
+for (i = 0; i < string.length; i++) {
     newString.unshift(string[i])
 }
 
@@ -125,13 +126,13 @@ console.log(5 - "5") // this logs the number 0
 
 //Determine if the string is a palindrome
 
-function palindrome(input){
-   
+function palindrome(input) {
+
     let check = []
-    for (i in input){
+    for (i in input) {
         check.unshift(input[i])
     }
-    if(check.join("").toLowerCase() == input.toLowerCase()){
+    if (check.join("").toLowerCase() == input.toLowerCase()) {
         console.log(input, "is a palindrome!")
     } else {
         console.log(input, "is not a palindrome.")
